@@ -11,7 +11,7 @@ let num2 = 10
 let resultado = num1 + num2
 
 //6. Muestra la variable resultado en consula
-console.log(resultado)
+console.log("El resultado es: ", resultado)
 
 //7. Crea un repositorio en Github y sube tu código, luego comparte el link de tu repositorio
 
