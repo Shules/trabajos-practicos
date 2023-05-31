@@ -24,5 +24,13 @@ if (firstWord.length > secondWord.length) {
         console.log("La palabra más larga es: ", secondWord)
 }
 
+// 3.  Escriba un programa que muestre la tabla de multiplicar del 1 al 10 del número 9. Se puede usar la función 
+//**while** o **for**.
+
+for (let i=0; i < 11; i++) {
+    let tablaNueve = 9 * i
+    console.log(9, "x", i, "es: ", tablaNueve) 
+}
+
 
 
