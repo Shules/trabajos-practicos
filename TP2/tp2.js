@@ -32,5 +32,12 @@ for (let i=0; i < 11; i++) {
     console.log(9, "x", i, "es: ", tablaNueve) 
 }
 
+//4.  Escribir una función con el nombre "multiplicar" que me permita pasarle un número como párametro y lo multiplique x
+//**23** y retorne el resultado. Usar esta funcion en otra variable y mostrar el resultado con el **console.log**
 
+function multiplicar(num) {   
+    return  num * 23;
+}
+let resultado = multiplicar (50)
+console.log(23, "x", (50), "=", resultado)
 
