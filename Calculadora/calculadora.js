@@ -1,12 +1,9 @@
-const sumar = require('./sumar.js');
-const restar = require('./restar.js')
-const multiplicar = require('./multiplicar.js')
-const dividir = require('./dividir.js')
+const operaciones = require("./operacionesMat")
 
-let resultadoSumar = sumar(1,2)
-let resultadoRestar = restar(1,2)
-let resultadoMultiplicar = multiplicar(1,0)
-let resultadoDividir = dividir(1,0)
+let resultadoSumar = operaciones.sumar(1,2)
+let resultadoRestar = operaciones.restar(1,2)
+let resultadoMultiplicar = operaciones.multiplicar(1,0)
+let resultadoDividir = operaciones.dividir(0,10)
 
 console.log("El resultado de la suma es: ", resultadoSumar)
 console.log("El resultado de la resta es: ", resultadoRestar)
