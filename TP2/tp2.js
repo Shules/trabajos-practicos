@@ -12,4 +12,17 @@ if (resto > 0) {
     console.log("El numero ", numeroRandom, " es par")
 }
 
+//2.  Dada dos palabras, "tren" y "edificio", hacer un programa que nos permita calcular cuál palabra es más larga.
+//Usar la función **length**
+
+const firstWord = "Tren"
+const secondWord= "Edificio"
+
+if (firstWord.length > secondWord.length) {
+        console.log("La palabra más larga es: ", firstWord)
+} else {
+        console.log("La palabra más larga es: ", secondWord)
+}
+
+
 
