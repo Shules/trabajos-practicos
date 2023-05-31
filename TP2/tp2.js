@@ -41,3 +41,12 @@ function multiplicar(num) {
 let resultado = multiplicar (50)
 console.log(23, "x", (50), "=", resultado)
 
+//5.  Escribir un programa que inicie un array vacío y luego vaya almacenando números aleatorios. 
+//Puede usar la variable "numeroRandom" del ejercicio 1.
+
+let numberList = []
+
+for(let i = 0; i < 10; i++) {
+    numberList.push(Math.floor((Math.random() * (100 - 1 + 1)) + 1))
+}
+console.log("La lista se compone de: ", numberList)
