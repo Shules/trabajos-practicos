@@ -1,0 +1,22 @@
+{
+  "name": "tasksapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "taskData.js",
+  "scripts": {
+    "start": "node tasks.js"
+  },
+  "keywords": [
+    "functions",
+    "edit.js",
+    "filter.js",
+    "find.js",
+    "list.js",
+    "return.js"
+  ],
+  "author": "Franco Julian Funes Ceballos",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
