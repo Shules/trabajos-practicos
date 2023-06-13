@@ -4,7 +4,7 @@ const readlineSync = require("readline-sync");
 let listed = [];
 
 if (process.argv[2] === "list") {
-   const listTitle = readlineSync.question("¿Quiere ver los titulos?")
+   const listTitle = readlineSync.question("¿Quiere ver los títulos?", "utf-8")
 
    const callList = () => {
     if (listTitle == "Yes") {
