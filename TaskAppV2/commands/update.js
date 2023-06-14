@@ -3,7 +3,8 @@ const readTasks = require('./read.js')
 const readLineSync = require('readline-sync')
 const write = require('./writeTaskData.js')
 
-if (process.argv[2] == "Actualizar") {
+const update = () => {
+    
   const findTitle = readLineSync.question("Ingrese la tarea para actualizar: ")
 
   const newDesc = readLineSync.question("Ingrese la nueva descripcion: ")
@@ -18,9 +19,14 @@ if (process.argv[2] == "Actualizar") {
         tasks[i].desc = desc
       }
     }
+
     write(tasks)
+
   }
+
   updateTask()
+
 }
 
+module.exports = update;
 

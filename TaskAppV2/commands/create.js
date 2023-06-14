@@ -1,23 +1,33 @@
 const fs = require("fs")
 const readTasks = require("./read.js")
 const readLineSync = require("readline-sync")
+const path = require("path")
 
-if (process.argv[2] == "Crear") {
-  const newTitle = readLineSync.question("Ingrese el titulo de la tarea nueva: ")
+const pathFile = path.join(__dirname, '..', './taskdata.json')
 
-  const newDesc = readLineSync.question("Ingrese el titulo de la tarea nueva: ")
+const create = () => {
+     const newTitle = readLineSync.question("Ingrese el titulo de la tarea nueva: ")
 
-  const createTask = (title, desc) => {
-    title = newTitle;
-    desc = newDesc;
+     const newDesc = readLineSync.question("Ingrese el titulo de la tarea nueva: ")
+
+const createTask = (title, desc) => {
+   title = newTitle;
+   desc = newDesc;
+
     const newObject = {
-      title: title,
-      desc: desc
+    title: title,
+    desc: desc
     }
     const newTask = readTasks()
     newTask.push(newObject)
-    fs.writeFileSync("../taskData.json", JSON.stringify(newTask, null, 2))
+    fs.writeFileSync(pathFile, JSON.stringify(newTask, null, 2))
   }
 
-  module.exports = createTask
+createTask()
+
 }
+
+module.exports = create;
+
+
+

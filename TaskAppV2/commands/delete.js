@@ -1,15 +1,18 @@
 const fs = require('fs')
+const path = require("path")
 const readTasks = require('./read.js')
 const readLineSync = require('readline-sync')
 const write = require('./writeTaskData.js')
 
-if (process.argv[2] == "Borrar") {
+
+const erase = () => {
+
   const eraseTitle = readLineSync.question("Ingrese la tarea para borrar: ")
 
   const tasks = readTasks()
 
-  const deleteTask = (title) => {
-    title = eraseTitle;
+const deleteTask = (title) => {
+   title = eraseTitle;
     for (i = 0; i < tasks.length; i++) {
       if (title == tasks[i].title) {
         tasks.splice(i, 1)
@@ -19,5 +22,8 @@ if (process.argv[2] == "Borrar") {
     return tasks
   }
 
-  console.log(deleteTask())
+deleteTask();
+
 }
+
+module.exports = erase;
