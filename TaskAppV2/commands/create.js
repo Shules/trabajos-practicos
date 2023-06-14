@@ -5,7 +5,7 @@ const readLineSync = require('readline-sync')
 if (process.argv[2] == "Crear") {
 const newTitle = readLineSync.question("Ingrese el titulo de la tarea nueva: ")
 const newDesc = readLineSync.question("Ingrese el titulo de la tarea nueva: ")
-const create = (title, desc) => {
+const createTask = (title, desc) => {
   title = newTitle
   desc = newDesc
   const newObject = 
@@ -17,6 +17,8 @@ const create = (title, desc) => {
   newTask.push(newObject)
   fs.writeFileSync('../taskData.json', JSON.stringify(newTask, null, 2))
  }
- create();
+
+ module.exports = createTask;
 }
+
 

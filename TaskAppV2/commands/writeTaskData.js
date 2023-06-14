@@ -1,11 +1,8 @@
 const fs = require('fs');
-const readlineSync = require("readline-sync");
 
-
-const writeTaskData = (newTask) => {
-    const dataString = JSON.stringify(newTask)
-    fs.writeFileSync("../taskData.json")
+const writeTasks = (newTasks) => {
+    fs.writeFileSync('../taskData.json', JSON.stringify(newTasks, null, 2))
 }
 
 
-module.exports = writeTaskData();
+module.exports = writeTasks;
