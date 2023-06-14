@@ -1,9 +1,9 @@
 const fs = require('fs')
 
-const parsedData = JSON.parse(fs.readFileSync("../taskData.json", "utf-8"))
 
 const readTaskData = () => {
-    return parsedData;
+   const parsedData = JSON.parse(fs.readFileSync("../taskData.json", "utf-8"))
+   return parsedData;
 }
 
-module.exports = readTaskData();
+module.exports = readTaskData;
